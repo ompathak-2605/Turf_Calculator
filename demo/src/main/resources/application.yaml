@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: Turf_counter
+  datasource:
+    url: jdbc:mysql://localhost:3306/turf_counter?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+    username: turf
+    password: turfcounter
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    open-in-view: false
+server:
+  port: 8080
